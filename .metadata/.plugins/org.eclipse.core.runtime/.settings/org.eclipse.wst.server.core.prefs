@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<runtimes>\n  <runtime id\="J2EE Preview" name\="J2EE Preview" runtime-type-id\="org.eclipse.jst.server.preview.runtime" timestamp\="0"/>\n  <runtime gae-sdk-name\="App Engine" gae-sdk-version\="1.9.34" id\="Google App Engine" location\="/Users/deepak/.eclipse/org.eclipse.platform_4.5.2_237074330_macosx_cocoa_x86_64/plugins/com.google.appengine.eclipse.sdkbundle_1.9.34/appengine-java-sdk-1.9.34/" name\="Google App Engine" runtime-type-id\="com.google.appengine.runtime.id1" timestamp\="0"/>\n</runtimes>\n

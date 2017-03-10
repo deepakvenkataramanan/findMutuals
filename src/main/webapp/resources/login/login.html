@@ -1,0 +1,117 @@
+<nav-Header></nav-Header>
+
+<div class="container">
+	<div class="search-panel">
+
+		<div class="search-panel-body">
+			<div ng-controller="welcomeController">
+
+				<div class="col-md-8 col-md-offset-2">
+					<uib-tabset active="active"> <uib-tab index="0"
+						heading="Pets">
+					<hr>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-1">
+							<h5>Choose one</h5>
+							<div class="btn-group ">
+								<label class="btn btn-success" ng-model="radioModel"
+									uib-btn-radio="'Left'" uncheckable>Dog <i
+									class="fa fa-paw"></i></label> <label class="btn btn-success"
+									ng-model="radioModel" uib-btn-radio="'Middle'" uncheckable>Cat
+									<i class="fa fa-paw"></i>
+								</label> <label class="btn btn-success" ng-model="radioModel"
+									uib-btn-radio="'other'" uncheckable>Other <i
+									class="fa fa-paw"></i></label>
+							</div>
+
+							<h5>Your Zip</h5>
+							<input type="text" ng-model="ngModelOptionsSelected"
+								uib-typeahead="state for state in states | filter:$viewValue | limitTo:8"
+								class="form-control">
+
+							<div class="row">
+								<div class="col-md-6">
+									<h5>From</h5>
+
+
+									<p class="input-group">
+										<input type="text" class="form-control"
+											uib-datepicker-popup="{{format}}" ng-model="dt"
+											is-open="popup1.opened" datepicker-options="dateOptions"
+											ng-required="true" close-text="Close"
+											alt-input-formats="altInputFormats" /> <span
+											class="input-group-btn">
+											<button type="button" class="btn btn-default"
+												ng-click="dtFrom()">
+												<i class="glyphicon glyphicon-calendar"></i>
+											</button>
+										</span>
+									</p>
+
+								</div>
+
+								<div class="col-md-6">
+									<h5>To</h5>
+
+									<p class="input-group">
+										<input type="text" class="form-control"
+											uib-datepicker-popup="{{format}}" ng-model="dt"
+											is-open="popup2.opened" datepicker-options="dateOptions"
+											ng-required="true" close-text="Close"
+											alt-input-formats="altInputFormats" /> <span
+											class="input-group-btn">
+											<button type="button" class="btn btn-default"
+												ng-click="dtTo()">
+												<i class="glyphicon glyphicon-calendar"></i>
+											</button>
+										</span>
+									</p>
+								</div>
+
+							</div>
+
+
+							<button type="button" class="btn btn-primary"
+								ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1"
+								btn-checkbox-false="0">Search</button>
+
+
+						</div>
+					</div>
+
+					</uib-tab> <uib-tab index="1" heading="Ride">Static content
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+
+					</uib-tab> </uib-tab> <uib-tab index="2" heading="Other">Static content
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+					<p>dsfhsdfhjdksfds</p>
+
+					</uib-tab> <!--     <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}" disable="tab.disabled"> -->
+					<!--       {{tab.content}} --> <!--     </uib-tab> --> <!--     <uib-tab index="3" select="alertMe()"> -->
+					<!--       <uib-tab-heading> --> <!--         <i class="glyphicon glyphicon-bell"></i> Alert! -->
+					<!--       </uib-tab-heading> --> <!--       I've got an HTML heading, and a select callback. Pretty cool! -->
+					<!--     </uib-tab> --> </uib-tabset>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
